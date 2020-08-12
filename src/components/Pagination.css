@@ -1,0 +1,110 @@
+.Pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: darkblue;
+    box-sizing: border-box;
+    border: midnightblue 5px solid;
+    /*padding: 20px;*/
+    /*margin: 50px;*/
+    background-color: azure;
+    min-width: 320px;
+    width: 50%;
+    height: 100px;
+}
+
+
+.Pagination-controls {
+    display: flex;
+    font-size: 60px;
+    line-height: 0.4;
+    border: midnightblue 3px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+.Pagination-controls.left {
+    align-items: start;
+}
+
+.Pagination-controls.right {
+    align-items: end;
+}
+
+
+.Pagination-list {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Pagination-items {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.7;
+    border: midnightblue 3px solid;
+    border-radius: 15px;
+    width: auto;
+    height: 40px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    white-space: nowrap;
+}
+
+.Pagination-controls:hover,
+.Pagination-items:hover {
+    background-color: yellow;
+}
+
+.Pagination-controls.active,
+.Pagination-items.active {
+    background-color: yellow;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .Pagination {
+        padding: 0;
+        width: calc(100% - 8px)
+    }
+
+    .Pagination-controls {
+        font-size: 30px;
+        line-height: 0.4;
+        border: midnightblue 3px solid;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        background-color: #f1f1f1;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+    }
+}
