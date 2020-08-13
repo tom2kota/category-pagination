@@ -2,17 +2,21 @@ import React from "react";
 import './Pagination.css'
 
 export const Pagination = () => {
+    const items = [
+        'all',
+        'new games',
+        'lotto',
+        'popular',
+        'popular 2020',
+        'top',
+        'top 2020'
+    ]
     return (
         <div className="Pagination">
             <div className="Pagination-controls left">&lsaquo;</div>
             <div className="Pagination-list">
-                <div className="Pagination-items">all</div>
-                <div className="Pagination-items">new games</div>
-                <div className="Pagination-items">lotto</div>
-                <div className="Pagination-items">popular</div>
-                <div className="Pagination-items">popular 2020</div>
-                <div className="Pagination-items">top</div>
-                <div className="Pagination-items">top 2020</div>
+                {items.map(item => <div key={Math.floor(Math.random() * 1000)}
+                                        className="Pagination-items">{item}</div>)}
             </div>
             <div className="Pagination-controls right">&rsaquo;</div>
         </div>
