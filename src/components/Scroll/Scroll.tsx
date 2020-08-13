@@ -1,7 +1,7 @@
 import React from "react";
-import './Pagination.css'
+import './Scroll.css'
 
-export const Pagination = () => {
+export const Scroll = () => {
     const items = [
         'all',
         'new games',

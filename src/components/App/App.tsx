@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import {Pagination} from "./Pagination";
+import Pagination from "../Pagination/Pagination";
+
+// import {Scroll} from "../Scroll/Scroll";
+
 
 function App() {
     return (
         <div className="App">
+
             <header className="App-header">
                 <p style={{display: "none"}}>
                     Category Pagination &nbsp;
@@ -17,7 +21,7 @@ function App() {
                         (Video Sample)
                     </a>
                 </p>
-
+                {/*<Scroll/>*/}
                 <Pagination/>
             </header>
 
