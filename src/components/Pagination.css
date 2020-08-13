@@ -46,13 +46,16 @@
 .Pagination-list {
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
+    /*overflow: hidden;*/
+    overflow-x: scroll;
 }
 
+.Pagination-list::-webkit-scrollbar {
+    display: none;
+}
 
 .Pagination-items {
     font-size: 20px;
